@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us - Our Consulting Firm</title>
+    <title>VMakeTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -10,19 +12,46 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <!-- Contact Form -->
+        <section class="contact-form-section">
             <h2>Get in Touch</h2>
-            <p>Contact form or contact details...</p>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>Contact information and social media links...</p>
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p class="contact-detail">3106 Brushy Mountain St<br>Cary, NC 27519</p>
+        </div>
+        <div class="footer-section">
+            <h3>Hours</h3>
+            <p class="contact-detail">Monday - Friday<br>9:30am - 6pm [EST]</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p class="contact-detail"><a href="mailto:hr@vmaketech.com" class="contact-detail">hr@vmaketech.com</a><br>(248) 679-6334</p>
+        </div>
+        <div class="footer-section social-links">
+            <h3>Follow Us</h3>
+            <!-- Social Icons -->
+            <a href="your-linkedin-url"><i class="fab fa-linkedin"></i></a>
+            <a href="your-twitter-url"><i class="fab fa-twitter"></i></a>
+            <a href="your-facebook-url"><i class="fab fa-facebook-f"></i></a>
+            <!-- Add other social links as needed -->
+        </div>
     </footer>
+    
 </body>
 </html>
