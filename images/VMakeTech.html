@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VMakeTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+      <img src="images/logo.png" alt="VMakeTech Logo" class="header-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discribe">
+            <blockquote>
+                "At vmaketech, we craft your unique success story by providing top-notch IT staffing services for Fortune 500 companies. With our expertise and experience, we ensure that your business evolves and thrives in the ever-changing tech landscape. Trust us to make it feel right for right now, and watch as your success takes care of itself. It always does."
+            </blockquote>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <p>Overview of services offered...</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p class="contact-detail">3106 Brushy Mountain St<br>Cary, NC 27519</p>
+        </div>
+        <div class="footer-section">
+            <h3>Hours</h3>
+            <p class="contact-detail">Monday - Friday<br>9:30am - 6pm [EST]</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p class="contact-detail"><a href="mailto:hr@vmaketech.com" class="contact-detail">hr@vmaketech.com</a><br>(248) 679-6334</p>
+        </div>
+        <div class="footer-section social-links">
+            <h3>Follow Us</h3>
+            <a href="your-linkedin-url"><i class="fab fa-linkedin"></i></a>
+            <a href="your-twitter-url"><i class="fab fa-twitter"></i></a>
+            <a href="your-facebook-url"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textElement = document.querySelector('.animated-text');
+            window.addEventListener('scroll', function() {
+                const position = textElement.getBoundingClientRect();
+        
+                // Check if the text element is in the viewport
+                if(position.top < window.innerHeight && position.bottom >= 0) {
+                    textElement.style.opacity = '1';
+                    textElement.style.transform = 'translateX(0px)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
