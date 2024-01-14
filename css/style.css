@@ -1,5 +1,6 @@
-/* Updated style.css content */
+/* Existing styles... */
 
+/* Global styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -17,12 +18,13 @@ body {
 
 main {
     flex: 1 0 auto;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px;
 }
 
+/* Header styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 253);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,19 +36,21 @@ header {
     font-weight: bold;
 }
 
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     display: flex;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
-    /*text-transform: uppercase;*/
+    color: rgba(251, 137, 55, 0.955);
     position: relative;
 }
 
@@ -62,22 +66,25 @@ nav a:after {
     transition: width .3s;
 }
 
-nav a:hover:after {
+nav a:hover:after,
+nav a.active:after {
     width: 100%;
     left: 0;
     background: white;
 }
 
-nav a.active:after {
-    width: 100%;
-    background: white;
+/* Logo styles */
+.header-logo {
+    height: 50px; /* Adjust as needed */
+    /* margin-left: auto; Push the logo to the right */
 }
 
+/* Description block styles */
 .discribe {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px); /* Adjust height to be full viewport minus header height */
+    height: calc(100vh - 60px);
     text-align: center;
     padding: 0 20px;
     color: #333;
@@ -91,23 +98,16 @@ blockquote {
     margin: 0 auto;
 }
 
-
+/* Footer styles */
 footer {
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: rgb(0, 0, 0);
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-.animated-text {
-    opacity: 0; /* Start fully transparent */
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; /* Retains the style values set by the last keyframe */
 }
 
 .footer-section {
@@ -132,12 +132,14 @@ footer {
     color: #f90;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
     }
     nav ul {
         padding-top: 10px;
+        margin-right: 0;
     }
     footer {
         flex-direction: column;
@@ -151,8 +153,10 @@ footer {
     }
 }
 
+/* Animation styles */
 @keyframes fadeInAnimation {
     0% {
+        opacity: 0
         opacity: 0; /* Fully transparent */
         transform: translateX(-50px); /* Optional: starts from the left */
     }
@@ -171,6 +175,7 @@ footer {
     animation: fadeIn 2s ease-in forwards;
 }
 
+/* Contact Form Styles */
 .contact-form-section {
     text-align: center;
     padding: 40px 0;
@@ -182,7 +187,7 @@ footer {
 }
 
 .contact-detail {
-    color: #ff4500;
+    color: rgba(251, 137, 55, 0.955);
 }
 
 a.contact-detail {
