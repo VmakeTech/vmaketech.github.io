@@ -48,11 +48,6 @@ header {
     padding: 10px 20px;
 }
 
-.desktop-nav {
-    display: block; /* or 'flex' or other display types as needed */
-    /* additional styling */
-}
-
 .nav-brand {
     font-size: 1.8em;
     font-weight: bold;
