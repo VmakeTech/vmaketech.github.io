@@ -23,6 +23,7 @@
     }
     
     .hamburger-menu {
+        color: #fb672c;
         display: block;
         position: absolute; /* Position the hamburger menu */
         top: 20px; /* Adjust as needed */
