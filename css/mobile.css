@@ -32,7 +32,12 @@
         top: 20px; /* Adjust as needed */
         right: 20px; /* Adjust as needed */
         z-index: 2; /* Ensure it's above other content */
-        }
+    }
+
+    .header-logo {
+        position: relative; /* Adjust if needed */
+        left: 10px; /* Adjust as needed */
+    }
 
     .mobile-nav {
         /* Styling for the mobile nav menu */
