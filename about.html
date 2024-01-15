@@ -10,26 +10,29 @@
 </head>
 <body>
     <header>
-        <button class="hamburger-menu" aria-label="Open navigation menu">
-            &#9776; <!-- This is the Unicode character for the hamburger icon -->
-          </button>
+        <div class="header-content"> <!-- Encapsulate logo and button -->
           <img src="images/logo.png" alt="VMakeTech Logo" class="header-logo">
-            <nav class="mobile-nav" id="mobileNav">
+          <button class="hamburger-menu" aria-label="Open navigation menu">
+              &#9776; <!-- This is the Unicode character for the hamburger icon -->
+          </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+        </nav>
+        <nav class="desktop-nav">
               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">About</a></li>             
                   <!-- <li><a href="services.html">Services</a></li>
                   <li><a href="contact.html">Contact</a></li> -->
               </ul>
-            </nav>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <!-- <li><a href="contact.html">Contact</a></li> -->
-            </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <div class="content-section">
             <div class="content-block">
