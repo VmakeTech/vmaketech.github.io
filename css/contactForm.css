@@ -1,0 +1,83 @@
+/* Contact Form Section Styling */
+.contact-form-section {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto; /* Increase margin for more space around the form */
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white for the form background */
+    border-radius: 15px; /* Larger border radius for a softer look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+}
+
+.contact-form-section h2 {
+    margin-bottom: 30px; /* More space above the form title */
+    color: #333; /* Dark color for the title */
+    text-shadow: none; /* Remove text shadow for cleaner look */
+}
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch input fields to full width */
+}
+
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px; /* Add more space between fields */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded borders for input fields */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form input[type="tel"]:focus,
+#contact-form textarea:focus {
+    border-color: #0052cc; /* Highlight color for focused fields */
+    box-shadow: 0 0 8px rgba(0, 82, 204, 0.2); /* Subtle glow effect on focus */
+}
+
+#contact-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap between the input fields */
+    flex: 1; /* Each child takes up equal space */
+}
+
+#contact-form button {
+padding: 15px 30px; /* Larger button padding for a better click area */
+background-color: #0052cc; /* Brand color for the button */
+color: white; /* White text on the button for contrast */
+border: none;
+border-radius: 8px; /* Rounded corners for the button */
+font-size: 18px; /* Larger font size for the button text */
+font-weight: bold; /* Bold font weight for the button text */
+margin-top: 20px; /* Space above the button */
+cursor: pointer; /* Cursor to indicate the button is clickable */
+transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+outline: none; /* Remove outline to avoid default browser styles */
+}
+
+#contact-form button:hover {
+background-color: #0041b3; /* Darker shade on hover for the button */
+transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.contact-form-section {
+margin: 30px 20px; /* Adjust margin for smaller screens */
+padding: 30px; /* Adjust padding for smaller screens */
+}
+#contact-form .form-row {
+    flex-direction: column;
+    gap: 0;
+    flex: none; /* Let it take the full width */
+}
+}
