@@ -32,7 +32,7 @@
 
     .header-logo {
         position: relative; /* Adjust if needed */
-        left: 0px; /* Adjust as needed */
+        right: 0px; /* Adjust as needed */
     }
 
     .mobile-nav {
