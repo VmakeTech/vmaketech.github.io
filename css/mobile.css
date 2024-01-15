@@ -61,6 +61,27 @@
     .mobile-nav li:last-child a {
         border-bottom: none;
     }
+
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        padding-top: 10px;
+        margin-right: 0;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    .social-links {
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .content-section {
+        grid-template-columns: 1fr; /* stacks blocks vertically on small screens */
+    }
 }
 
 /* Additional styles for active state */

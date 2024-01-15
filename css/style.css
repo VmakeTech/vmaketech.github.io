@@ -168,25 +168,16 @@ footer {
     color: #f90;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-    nav ul {
-        padding-top: 10px;
-        margin-right: 0;
-    }
-    footer {
-        flex-direction: column;
-    }
-    .footer-section {
-        margin-bottom: 20px;
-    }
-    .social-links {
-        order: -1;
-        margin-bottom: 20px;
-    }
+.contact-detail {
+    color: rgba(251, 137, 55, 0.955);
+}
+
+a.contact-detail {
+    color: #FFA07A; /* Light pale orange color */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+a.contact-detail:hover {
+    color: #ff4500; /* Slightly darker orange color for hover effect */
 }
 
 /* Animation styles */
@@ -236,11 +227,4 @@ footer {
 /* Full-width block style if needed */
 .full-width {
     grid-column: 1 / -1; /* spans full width */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .content-section {
-        grid-template-columns: 1fr; /* stacks blocks vertically on small screens */
-    }
 }
