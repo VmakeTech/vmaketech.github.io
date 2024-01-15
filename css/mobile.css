@@ -41,8 +41,8 @@
         top: 60px; /* Directly below the header */
         left: 0;
         width: 100%;
-        background: #fff; /* or your preferred background color */
-        border-top: 1px solid #ccc;
+        background: #000000; /* or your preferred background color */
+        border-top: 1px solid #818080;
         z-index: 10;
     }
     .mobile-nav ul {
@@ -54,9 +54,9 @@
     .mobile-nav li a {
         display: block;
         padding: 10px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #1d1c1c;
         text-decoration: none;
-        color: #333;
+        color: #fb672c;
     }
     
     .mobile-nav li:last-child a {
