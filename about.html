@@ -70,5 +70,15 @@
             <!-- Add other social links as needed -->
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger-menu');
+            var mobileNav = document.getElementById('mobileNav');
+        
+            hamburger.addEventListener('click', function() {
+                mobileNav.classList.toggle('active'); // This toggles the 'active' class on and off
+            });
+        });
+    </script>
 </body>
 </html>

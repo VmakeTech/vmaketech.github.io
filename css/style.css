@@ -48,6 +48,11 @@ header {
     padding: 10px 20px;
 }
 
+.desktop-nav {
+    display: block; /* or 'flex' or other display types as needed */
+    /* additional styling */
+}
+
 .nav-brand {
     font-size: 1.8em;
     font-weight: bold;
@@ -204,51 +209,6 @@ footer {
 
 .discribe blockquote {
     animation: fadeIn 2s ease-in forwards;
-}
-
-/* Contact Form Styles */
-.contact-form-section {
-    text-align: center;
-    padding: 40px 0;
-}
-
-#contact-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact-detail {
-    color: rgba(251, 137, 55, 0.955);
-}
-
-a.contact-detail {
-    color: #FFA07A; /* Light pale orange color */
-    text-decoration: none; /* Optional: removes underline from links */
-}
-
-a.contact-detail:hover {
-    color: #ff4500; /* Slightly darker orange color for hover effect */
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-}
-
-#contact-form button {
-    padding: 10px 20px;
-    background: #0052cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background: #0041b3;
 }
 
 /* About Page Content Section Styles */

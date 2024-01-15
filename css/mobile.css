@@ -1,3 +1,13 @@
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Spreads the logo and hamburger menu apart */
+    align-items: center; /* Aligns them vertically */
+}
+
+.header-logo {
+    margin-left: 20px; /* Add some margin if needed */
+}
+
 .hamburger-menu {
     display: none; /* Hidden by default, shown only in mobile view */
     background: none;
@@ -12,40 +22,48 @@
 
 /* Media query to show the menu button on mobile devices */
 @media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    
     .hamburger-menu {
         display: block;
-    }
+        position: absolute; /* Position the hamburger menu */
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 2; /* Ensure it's above other content */
+        }
 
     .mobile-nav {
         /* Styling for the mobile nav menu */
         position: absolute;
-        top: 100%; /* Directly below the header */
+        top: 60px; /* Directly below the header */
         left: 0;
         width: 100%;
         background: #fff; /* or your preferred background color */
         border-top: 1px solid #ccc;
         z-index: 10;
-        }
-        .mobile-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .mobile-nav li a {
-            display: block;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .mobile-nav li:last-child a {
-            border-bottom: none;
-        }
     }
+    .mobile-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mobile-nav li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .mobile-nav li:last-child a {
+        border-bottom: none;
+    }
+}
 
-    /* Additional styles for active state */
-    .mobile-nav.active {
-    display: block;
-    }        
+/* Additional styles for active state */
+.mobile-nav.active {
+display: block;
+}        
